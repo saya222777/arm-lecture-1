@@ -50,8 +50,8 @@ fibonacci:
 	it eq
 	pop {r4, r5, pc}	
 
-	@ if R4 > 1, goto .loop
-	cmp r4, #1
+	@ if R4 > 2, goto .loop
+	cmp r4, #2
 	it gt
 	b .loop
 
