@@ -45,8 +45,8 @@ fibonacci:
 	@ counter(R4) -1
 	sub r4, #1
 
-	@ if R4 == 1, R5 is the answer
-	cmp r4, #1
+	@ if R4 == 2, R5 is the answer
+	cmp r4, #2
 	it eq
 	pop {r4, r5, pc}	
 
